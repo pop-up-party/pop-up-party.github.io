@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050605" />
+    <title>POP UP — клубная ночь</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="hero" id="top">
+      <nav class="topbar" aria-label="Главная навигация">
+        <a class="brand" href="#top" aria-label="POP UP — наверх">P/UP</a>
+        <a class="nav-ticket" href="#tickets">БИЛЕТЫ <span>↗</span></a>
+      </nav>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="grid-plane"></div>
+        <div class="laser laser-a"></div>
+        <div class="laser laser-b"></div>
+        <div class="laser laser-c"></div>
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="scanline"></div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> НОЧНАЯ ТРАНСЛЯЦИЯ / 001</p>
+        <h1 aria-label="POP UP"><span>POP</span> <i>UP</i></h1>
+        <div class="hero-meta">
+          <p>ДАТА <strong>СКОРО</strong></p>
+          <span></span>
+          <p>ЛОКАЦИЯ <strong>СКОРО</strong></p>
+        </div>
+      </div>
+
+      <a class="scroll-mark" href="#lineup"><span>СКРОЛЛ</span><b>↓</b></a>
+    </header>
+
+    <main>
+      <section class="section lineup" id="lineup" data-reveal>
+        <div class="section-head">
+          <p class="index">01 / ЛАЙНАП</p>
+          <p class="section-note">ТРИ ИМЕНИ.<br />ОДНА ЧАСТОТА.</p>
+        </div>
+        <div class="artists" aria-label="Участники">
+          <article class="artist artist-one"><span>01</span><h2>DJ<br />GRINDEN</h2><em>///</em></article>
+          <article class="artist artist-two"><span>02</span><h2>FONAR</h2><em>///</em></article>
+          <article class="artist artist-three"><span>03</span><h2>DJ<br />EADBIRD</h2><em>///</em></article>
+        </div>
+      </section>
+
+      <section class="section tickets" id="tickets" data-reveal>
+        <div class="ticket-glow" aria-hidden="true"></div>
+        <div class="ticket-content">
+          <p class="index">02 / ПРОПУСК</p>
+          <h2>ВХОД<br /><i>ОТКРЫТ</i></h2>
+          <p class="price">ЦЕНА <strong>СКОРО</strong></p>
+          <!-- Replace # with your ticketing URL -->
+          <a class="ticket-button" href="#" target="_blank" rel="noreferrer">КУПИТЬ БИЛЕТ <span>↗</span></a>
+          <p class="ticket-caption">* ССЫЛКА АКТИВИРУЕТСЯ СКОРО</p>
+        </div>
+        <div class="ticket-code" aria-hidden="true">POP//UP<br />ACCESS<br />0001</div>
+      </section>
+
+      <section class="section location" id="location" data-reveal>
+        <div class="section-head">
+          <p class="index">03 / КООРДИНАТЫ</p>
+          <p class="section-note">АДРЕС ПОЯВИТСЯ<br />В ДЕНЬ СИГНАЛА.</p>
+        </div>
+        <div class="map-placeholder" role="img" aria-label="Локация будет объявлена позже">
+          <div class="map-grid"></div>
+          <p>ЛОКАЦИЯ<br /><strong>СКОРО</strong></p>
+          <span class="pin">✦</span>
+          <div class="map-coords">55°45' / 37°37'<br />WAITING FOR DATA</div>
+        </div>
+      </section>
+
+      <section class="section dresscode" data-reveal>
+        <p class="index">04 / ДРЕСС-КОД</p>
+        <div class="manifesto"><span>ЧЁРНОЕ — БАЗА.</span><br />ОДИН НЕОНОВЫЙ ЭЛЕМЕНТ<br />В ОБРАЗЕ — <strong>ОБЯЗАТЕЛЕН.</strong></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>POP UP © 2025</p>
+      <!-- Replace # with your Telegram channel URL -->
+      <a href="#" target="_blank" rel="noreferrer" aria-label="Telegram канал POP UP"><span class="telegram">↗</span> TELEGRAM-КАНАЛ</a>
+      <a href="#top" class="to-top">НАВЕРХ ↑</a>
+    </footer>
+
+    <aside class="popups" aria-live="polite">
+      <article class="popup popup-sale" id="popup-sale" aria-label="Специальное предложение">
+        <button class="popup-close" aria-label="Закрыть окно">×</button>
+        <p class="popup-kicker">!!! ВНИМАНИЕ !!!</p>
+        <h3>ТЫ УЖЕ<br />В СПИСКЕ?</h3>
+        <p>ЕСЛИ НЕТ — ИСПРАВЛЯЙ.</p>
+        <a href="#tickets" class="popup-link">ВЗЯТЬ ПРОПУСК ↗</a>
+      </article>
+      <article class="popup popup-noise" id="popup-noise" aria-label="Анонс вечеринки">
+        <button class="popup-close" aria-label="Закрыть окно">×</button>
+        <div class="burst">POP!</div>
+        <p>НЕ СПИ.<br /><strong>ЭТО НЕОН.</strong></p>
+        <small>LOUD MODE: ON</small>
+      </article>
+    </aside>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
