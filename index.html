@@ -8,7 +8,26 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="club-intro" aria-hidden="true">
+      <div class="club-mark" role="img" aria-label="Логотип клуба POP UP: неоновый лунный месяц в круге">
+        <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+          <circle class="mark-ring" cx="110" cy="110" r="89" />
+          <path class="mark-moon" d="M110 25A85 85 0 1 0 110 195A105 105 0 0 1 110 25Z" />
+          <circle class="mark-dot" cx="173" cy="173" r="5" />
+        </svg>
+      </div>
+      <p>POP UP / NIGHT DIVISION</p>
+    </div>
     <div class="grain" aria-hidden="true"></div>
+    <div class="ad-storm" aria-hidden="true">
+      <span>!!! КУПИ БИЛЕТ !!!</span><span>RAVE NOW</span><span>99% NO SLEEP</span><span>POP UP.EXE</span>
+      <span>НУЖЕН ТЕБЕ</span><span>LOUD LOUD LOUD</span><span>ВХОД ОТКРЫТ</span><span>CLICK FAST</span>
+      <span>ТАНЦУЙ ЕЩЁ</span><span>НЕ ВЫКЛЮЧАЙ</span><span>ACID SIGNAL</span><span>БИЛЕТЫ СКОРО</span>
+      <span>!!! СПАМ !!!</span><span>ONE NIGHT ONLY</span><span>NO ESCAPE</span><span>POP! POP! POP!</span>
+      <span>РЕЙВ ВНУТРИ</span><span>JOIN THE NOISE</span><span>ДАТА СКОРО</span><span>НЕОНОВЫЙ ВХОД</span>
+    </div>
+    <div class="no-signal" aria-hidden="true"><span>NO SIGNAL</span></div>
+    <div class="blackout" aria-hidden="true"><p>oh, im sorry</p></div>
     <header class="hero" id="top">
       <nav class="topbar" aria-label="Главная навигация">
         <a class="brand" href="#top" aria-label="POP UP — наверх">P/UP</a>
@@ -52,7 +71,15 @@
       </section>
 
       <section class="section tickets" id="tickets" data-reveal>
-        <div class="ticket-glow" aria-hidden="true"></div>
+        <div class="ticket-radar" aria-hidden="true">
+          <span class="radar-ring ring-one"></span>
+          <span class="radar-ring ring-two"></span>
+          <span class="radar-ring ring-three"></span>
+          <span class="radar-sweep"></span>
+          <span class="radar-dot dot-one"></span>
+          <span class="radar-dot dot-two"></span>
+          <span class="radar-dot dot-three"></span>
+        </div>
         <div class="ticket-content">
           <p class="index">02 / ПРОПУСК</p>
           <h2>ВХОД<br /><i>ОТКРЫТ</i></h2>
@@ -78,8 +105,11 @@
       </section>
 
       <section class="section dresscode" data-reveal>
-        <p class="index">04 / ДРЕСС-КОД</p>
-        <div class="manifesto"><span>ЧЁРНОЕ — БАЗА.</span><br />ОДИН НЕОНОВЫЙ ЭЛЕМЕНТ<br />В ОБРАЗЕ — <strong>ОБЯЗАТЕЛЕН.</strong></div>
+        <div class="dresscode-top">
+          <p class="index">04 / О НАС</p>
+          <p class="contract-copy">diesparrov и Lexzdos представляют вам свой клуб, который изменит ваше мнение о ночных клубах для подростков. У нас будет больше, чем вы сможете найти, и поэтому наш клуб особенный.</p>
+        </div>
+        <div class="manifesto"><span>ПРИМЕЧАНИЕ К ДОГОВОРУ / УСЛОВИЯ АКЦИИ</span>ЗА ОДИН НЕОНОВЫЙ ЭЛЕМЕНТ В ОБРАЗЕ — <strong>СКИДКА 20%.</strong></div>
       </section>
     </main>
 
@@ -92,14 +122,14 @@
 
     <aside class="popups" aria-live="polite">
       <article class="popup popup-sale" id="popup-sale" aria-label="Специальное предложение">
-        <button class="popup-close" aria-label="Закрыть окно">×</button>
+        <div class="popup-titlebar"><span>POPUP.EXE</span><button class="popup-close" aria-label="Закрыть окно">×</button></div>
         <p class="popup-kicker">!!! ВНИМАНИЕ !!!</p>
         <h3>ТЫ УЖЕ<br />В СПИСКЕ?</h3>
         <p>ЕСЛИ НЕТ — ИСПРАВЛЯЙ.</p>
         <a href="#tickets" class="popup-link">ВЗЯТЬ ПРОПУСК ↗</a>
       </article>
       <article class="popup popup-noise" id="popup-noise" aria-label="Анонс вечеринки">
-        <button class="popup-close" aria-label="Закрыть окно">×</button>
+        <div class="popup-titlebar"><span>ALERT_01</span><button class="popup-close" aria-label="Закрыть окно">×</button></div>
         <div class="burst">POP!</div>
         <p>НЕ СПИ.<br /><strong>ЭТО НЕОН.</strong></p>
         <small>LOUD MODE: ON</small>
